@@ -72,7 +72,7 @@ Akakce-Test-Automation/
 ├── Akakce-Test-Automation.iml
 └── README.md               # Project documentation
 ```
-🚀 Getting Started
+**🚀 Getting Started**
 Follow these steps to set up the project locally.
 
 Prerequisites
@@ -107,7 +107,9 @@ Repeat this step for FollowUnfollowTest.java and PriceCompRedirectTest.java if n
 
 Note: Never commit your real passwords to GitHub. The .gitignore file is configured to protect sensitive files, but always double-check your code.
 
-▶ Usage & Running Tests
+
+
+**▶ Usage & Running Tests**
 You can run the tests using your IDE's test runner.
 
 Run All Tests: Right-click on the Test/akakcebot package and select "Run 'Tests in 'akakcebot''".
@@ -115,9 +117,10 @@ Run All Tests: Right-click on the Test/akakcebot package and select "Run 'Tests 
 Run Specific Class: Open a test file (e.g., SearchTest.java) and click the Play icon next to the class name.
 
 
-🧪 Test Scenarios
 
-1. ✅  Authentication (LoginTest)
+**🧪 Test Scenarios**
+
+1.✅  Authentication (LoginTest)
 - Login with valid credentials.
 - Login with incorrect password & empty fields (Error message validation).
 - "Remember Me" cookie persistence.
