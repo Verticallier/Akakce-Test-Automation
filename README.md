@@ -71,6 +71,7 @@ Akakce-Test-Automation/
 ├── .gitignore              # Git ignore file
 ├── Akakce-Test-Automation.iml
 └── README.md               # Project documentation
+```
 🚀 Getting Started
 Follow these steps to set up the project locally.
 
