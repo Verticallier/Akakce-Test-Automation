@@ -71,3 +71,104 @@ Akakce-Test-Automation/
 ├── .gitignore              # Git ignore file
 ├── Akakce-Test-Automation.iml
 └── README.md               # Project documentation
+🚀 Getting Started
+Follow these steps to set up the project locally.
+
+Prerequisites
+Java Development Kit (JDK): Version 17 or higher recommended.
+
+IDE: IntelliJ IDEA (preferred) or Eclipse.
+
+Git: To clone the repository.
+
+Installation
+Clone the repository:
+
+Bash
+git clone [https://github.com/Verticallier/Akakce-Test-automation.git](https://github.com/Verticallier/Akakce-Test-automation.git)
+Open the project: Open your IDE and select the cloned folder (Akakce-Test-Automation) as the project root.
+
+Resolve Dependencies: Ensure that the Selenium and JUnit libraries are correctly added to your project's classpath/module settings.
+
+Configuration
+⚠️ Important: To run tests requiring user authentication (Login, Follow, etc.), you must provide valid credentials.
+
+Open Test/akakcebot/LoginTest.java.
+
+Locate the following constants:
+
+Java
+private static final String TEST_MAIL = "";     // TODO: Enter your email
+private static final String TEST_PASSWORD = ""; // TODO: Enter your password
+Fill in your test account credentials.
+
+Repeat this step for FollowUnfollowTest.java and PriceCompRedirectTest.java if necessary.
+
+Note: Never commit your real passwords to GitHub. The .gitignore file is configured to protect sensitive files, but always double-check your code.
+
+▶ Usage & Running Tests
+You can run the tests using your IDE's test runner.
+
+Run All Tests: Right-click on the Test/akakcebot package and select "Run 'Tests in 'akakcebot''".
+
+Run Specific Class: Open a test file (e.g., SearchTest.java) and click the Play icon next to the class name.
+
+🧪 Test Scenarios
+1. Authentication (LoginTest)
+✅ Login with valid credentials.
+
+✅ Login with incorrect password & empty fields (Error message validation).
+
+✅ "Remember Me" cookie persistence.
+
+✅ Rate limiting check (Repeated failed attempts).
+
+✅ Password input masking check.
+
+2. Search Engine (SearchTest)
+✅ Valid product search.
+
+✅ Empty & Special character query handling.
+
+✅ Case insensitivity & Partial match verification.
+
+✅ Typo Tolerance: Verifies if "ipohne" brings results for "iphone".
+
+✅ Dropdown suggestions check.
+
+3. Filtering (FilterTest)
+✅ Filter by Price Range + Brand + Features.
+
+✅ Verify filtered results match the selected criteria.
+
+✅ "No results found" verification for invalid ranges.
+
+4. Watchlist (FollowUnfollowTest)
+✅ Follow a product & verify in profile.
+
+✅ Prevent duplicate follows (Warning check).
+
+✅ Multi-Follow: Follow multiple items in a loop.
+
+✅ Unfollow single item & "Unfollow All" functionality.
+
+✅ Follow persistence across sessions (Logout/Login).
+
+5. Price Comparison (PriceCompRedirectTest)
+✅ Verify price list visibility (Guest vs. Logged-in).
+
+✅ Sorting: Ensure prices are sorted ascending.
+
+✅ Redirect: Test "Go to Seller" button opens a new tab.
+
+✅ Currency format validation (TL/$/€).
+
+✅ Free Shipping label check.
+
+⚠️ Disclaimer
+This project is for educational and testing purposes only. It is not affiliated with, endorsed by, or connected to Akakçe.com. Automated scraping or botting may violate the terms of service of the target website. Use responsibly.
+
+📞 Contact
+Batıkan Akdeniz - GitHub Profile
+
+Project Link: https://github.com/Verticallier/Akakce-Test-automation
