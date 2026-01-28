@@ -114,62 +114,43 @@ Run All Tests: Right-click on the Test/akakcebot package and select "Run 'Tests 
 
 Run Specific Class: Open a test file (e.g., SearchTest.java) and click the Play icon next to the class name.
 
+
 🧪 Test Scenarios
-1. Authentication (LoginTest)
-✅ Login with valid credentials.
 
-✅ Login with incorrect password & empty fields (Error message validation).
+1. ✅  Authentication (LoginTest)
+- Login with valid credentials.
+- Login with incorrect password & empty fields (Error message validation).
+- "Remember Me" cookie persistence.
+- Rate limiting check (Repeated failed attempts).
+- Password input masking check.
 
-✅ "Remember Me" cookie persistence.
+2.✅   Search Engine (SearchTest)
+- Valid product search.
+- Empty & Special character query handling.
+- Case insensitivity & Partial match verification.
+- Typo Tolerance: Verifies if "ipohne" brings results for "iphone".
+- Dropdown suggestions check.
 
-✅ Rate limiting check (Repeated failed attempts).
+3.✅   Filtering (FilterTest)
+- Filter by Price Range + Brand + Features.
+- Verify filtered results match the selected criteria.
+- "No results found" verification for invalid ranges.
 
-✅ Password input masking check.
+4.✅   Watchlist (FollowUnfollowTest)
+- Follow a product & verify in profile.
+- Prevent duplicate follows (Warning check).
+- Multi-Follow: Follow multiple items in a loop.
+- Unfollow single item & "Unfollow All" functionality.
+- Follow persistence across sessions (Logout/Login).
 
-2. Search Engine (SearchTest)
-✅ Valid product search.
+5.✅ Price Comparison (PriceCompRedirectTest)
 
-✅ Empty & Special character query handling.
-
-✅ Case insensitivity & Partial match verification.
-
-✅ Typo Tolerance: Verifies if "ipohne" brings results for "iphone".
-
-✅ Dropdown suggestions check.
-
-3. Filtering (FilterTest)
-✅ Filter by Price Range + Brand + Features.
-
-✅ Verify filtered results match the selected criteria.
-
-✅ "No results found" verification for invalid ranges.
-
-4. Watchlist (FollowUnfollowTest)
-✅ Follow a product & verify in profile.
-
-✅ Prevent duplicate follows (Warning check).
-
-✅ Multi-Follow: Follow multiple items in a loop.
-
-✅ Unfollow single item & "Unfollow All" functionality.
-
-✅ Follow persistence across sessions (Logout/Login).
-
-5. Price Comparison (PriceCompRedirectTest)
-✅ Verify price list visibility (Guest vs. Logged-in).
-
-✅ Sorting: Ensure prices are sorted ascending.
-
-✅ Redirect: Test "Go to Seller" button opens a new tab.
-
-✅ Currency format validation (TL/$/€).
-
-✅ Free Shipping label check.
+- Verify price list visibility (Guest vs. Logged-in).
+- Sorting: Ensure prices are sorted ascending.
+- Redirect: Test "Go to Seller" button opens a new tab.
+- Currency format validation (TL/$/€).
+- Free Shipping label check.
 
 ⚠️ Disclaimer
-This project is for educational and testing purposes only. It is not affiliated with, endorsed by, or connected to Akakçe.com. Automated scraping or botting may violate the terms of service of the target website. Use responsibly.
+This project is for educational and testing purposes only. It is not affiliated with, endorsed by, or connected to Akakce.com. Automated scraping or botting may violate the terms of service of the target website. Use responsibly.
 
-📞 Contact
-Batıkan Akdeniz - GitHub Profile
-
-Project Link: https://github.com/Verticallier/Akakce-Test-automation
