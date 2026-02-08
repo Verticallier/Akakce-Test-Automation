@@ -69,7 +69,7 @@ Akakce-Test-Automation/
 │       ├── FollowUnfollowTest.java     # Watchlist management tests
 │       └── PriceCompRedirectTest.java  # Price comparison & redirection tests
 ├── .gitignore              # Git ignore file
-├── Akakce-Test-Automation.iml
+├── Akakce-Test-Automation.iml 
 └── README.md               # Project documentation
 ```
 **🚀 Getting Started**
