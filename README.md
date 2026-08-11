@@ -86,7 +86,7 @@ Installation
 Clone the repository:
 
 Bash
-git clone [https://github.com/Verticallier/Akakce-Test-automation.git](https://github.com/Verticallier/Akakce-Test-automation.git)
+git clone https://github.com/batikanakdenizz/Akakce-Test-Automation.git
 Open the project: Open your IDE and select the cloned folder (Akakce-Test-Automation) as the project root.
 
 Resolve Dependencies: Ensure that the Selenium and JUnit libraries are correctly added to your project's classpath/module settings.
